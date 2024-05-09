@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kzero</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <main class="w-full min-h-screen relative bg- overflow-hidden">
@@ -27,10 +28,10 @@
         </div>
       </nav>
 
-      <section class="home w-full h-screen relative">
+      <!-- <section class="home w-full h-screen relative z-[2] overflow-hidden">
         <div class="overlay w-full h-screen bg-black fixed opacity-0 z-10"></div>
         <div class="bg w-full h-full fixed z-[-1]">
-          <img class="w-full h-full object-cover sticky" src="https://kzero.com/assets/home/hero/bg.webp" alt="">
+          <img class="w-full h-full object-cover sticky z-20" src="https://kzero.com/assets/home/hero/bg.webp" alt="">
         </div>
         <div class="text text-center translate-y-[60%] w-full h-[50vh] bg-transparent absolute z-[-1]">
           <h1 class="text-7xl text-[#191921]"><span class="text-[#324EEF]">Unlock</span> the Future <br> of Authentication</h1>
@@ -53,22 +54,91 @@
             <img class="h-[20%] w-[8%]" src="https://kzero.com/wp-content/uploads/2024/04/kzero-homepage-4-2x.png" alt="">
             <img class="h-[20%] w-[8%]" src="https://kzero.com/wp-content/uploads/2024/04/kzero-homepage-5-2x.png" alt="">
           </div>
-        </section>
+        </section> 
 
-        <section class="blck w-full h-[50vh]  absolute top-[30%] z-20  text-white flex items-center justify-center">
-          <h1 class="text-7xl text-center">Say Goodbye to Pa$$w0rds</h1>
-        </section>
+      
        
-        <canvas class="homepage w-full h-screen"></canvas>
+        <canvas class="homepage fixed z-[-1] w-full h-screen"></canvas>
 
        
       
-      </section>
+      </section> -->
      
 
-      <section class="breach w-full h-screen bg-black relative z-20">
+      <!-- <section class="breach w-full h-screen bg-black relative z-20 overflow-hidden">
+        <section class="blck w-full h-[100vh]  fixed  z-20 bg-black text-white flex items-center justify-center">
+          <h1 class="one text-7xl text-center">Say Goodbye to Pa$$w0rds</h1>
+        </section>
+        <div id="hero2" class="hero w-full h-full fixed text-white flex flex-col gap-[2vw] items-center justify-center text-center  bg-transparent z-[16] -mt-[4vw]">
+          <h1 class="percentage text-8xl">1%</h1>
+          <h1 class="text-3xl font-light text-zinc-500">of breaches are caused by <br> stolen credentials</h1>
+        </div>
+        <canvas class="two fixed z-[15] w-full h-screen"></canvas>
+        <section class="textarea w-full h-screen fixed z-10 text-white flex justify-center items-center">
+          <h1 class="text-center text-8xl font-normal text-zinc-500 w-2/3">Secure your workforce and <br>
+            customers with phishing- <br>
+            resistant MFA</h1>
+        </section>
+      </section> -->
 
-        <canvas class="two"></canvas>
+      <!-- <section class="phone w-full h-screen relative bg-[#171717] overflow-hidden">
+        <div class="overlay bg-[url(https://kzero.com/assets/bg.jpg)] opacity-[.1] bg-repeat w-full h-full fixed top-0 left-0 z-[0]"></div>
+        <div class="hero w-full h-screen relative z-[10] gap-[1vw] opacity-100 flex flex-col justify-center items-center text-white">
+          <h1 class="text-8xl capitalize">introducing <span class="text-[#324EEF]">multi-pass</span></h1>
+          <h6 class="text-2xl text-zinc-300 w-[40%] leading-[1.5] text-center">Bolster security and delight your employees and customers  with a seamless authentication experience.</h6>
+        </div>
+        <div class="lft fixed top-1 -left-3 opacity-0 ">
+          <div class="multi text-zinc-400 absolute translate-y-[50%] translate-x-[10%] w-full h-full">
+            <h1 class="text-5xl capitalize font-extralight mb-5 ">multi-pass <span>pro</span></h1>
+            <h6 class="w-[15%] text-lg capitalize">equip your users with biometric smart card security</h6>
+          </div>
+          <img src="https://kzero.com/assets/home/benefit/5.png" alt="">
+        </div>
+        <div class="rgt fixed top-1 -right-3 opacity-0">
+          <img src="https://kzero.com/assets/home/benefit/6.png" alt="">
+          <div class="multi text-zinc-400 absolute translate-x-[70%] w-full -translate-y-[50%] h-full z-[-1]">
+            <h1 class="text-5xl capitalize font-extralight mb-5 ">multi-pass <span>digital</span></h1>
+            <h6 class="w-[15%] text-lg capitalize">turn user mobile devices into smart authenticators</h6>
+          </div>
+        </div>
+        <canvas class="three absolute w-full h-screen top-0 left-0"></canvas>
+      </section> -->
+
+      <section class="cards w-full h-screen relative">
+        <div class="bg w-full h-full bg-[#D7D8E2] absolute z-[-1]">
+          <svg class="w-full h-full" width="2311" height="2623" viewBox="0 0 2311 2623" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1206.54 1070.04L2307.17 2620.64H1659.74L837.501 1471.45L552.632 1782.21V2620.64H2.31641L2.31641 1.78223L552.632 1.78223L552.632 1089.46L1549.67 1.78223L2190.63 1.78223L1206.54 1070.04Z" stroke="white" stroke-width="3"></path> </svg>
+        </div>
+        <div class="heading w-full h-[20vh] translate-y-[150%]">
+          <h1 class="text-7xl text-center capitalize mb-2">experience</h1>
+          <h1 class="text-7xl text-center capitalize ">true security</h1>
+        </div>
+
+        <div class="carditems w-full h-[80vh]  translate-y-[50vh   flex  gap-[3vw]">
+          <div class="item  w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+            <h6 class="text-xl">{ 01 }</h6>
+            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-1-2x-1.png" alt="">
+            <h1 class="text-4xl w-1/2">Deliver a secure and frictionless login experience</h1>
+          </div>
+
+          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+            <h6 class="text-xl">{ 02 }</h6>
+            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-2-2x-1.png" alt="">
+            <h1 class="text-4xl w-1/2">Meet and exceed stringent regulatory requirements</h1>
+          </div>
+
+          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+            <h6 class="text-xl">{ 03 }</h6>
+            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-3-2x-1.png" alt="">
+            <h1 class="text-4xl w-1/2">Reduce costs and free up IT resources</h1>
+          </div>
+
+          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+            <h6 class="text-xl">{ 04 }</h6>
+            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-4-2x-1.png" alt="">
+            <h1 class="text-4xl w-1/2">Future proof against new credential-based threats</h1>
+          </div>
+
+        </div>
       </section>
     </main>
 

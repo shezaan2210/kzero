@@ -301,35 +301,9 @@ tl.to(`.home>.text3`,{
   top: '-20%'
 })
 
-tl.from(`.blck>h1`,{
-  scrollTrigger:{
-    trigger: ".blck",
-    // pin: true,
-    scroller: `body`,
-    start: `400% 30%`,
-    end: `450% top`,
-    // markers: true,
-    scrub: true
-  },
-top: '0%',
-scale: 1,
-opacity: 0
-})
 
 
-tl.to('.blck',{
-  scrollTrigger:{
-    trigger: '.blck',
-    start: '500% 20%',
-    end: '600% top',
-    // pin: '.blck',
-    // markers: true,
-    scrub: true
-  },
-  opacity: 0,
-  scale: .5,
- 
-})
+
 
 
 
@@ -561,21 +535,332 @@ https://kzero.com/assets/home/breach/seq/150.webp?7
       img.height * ratio
     );
   }
-  
-  ScrollTrigger.create({
-  
+  // ScrollTrigger.create({
+
+  //   trigger: ".home",
+  //   pin: true,
+  //   scroller: `body`,
+  //   start: `top top`,
+  //   end: `250% top`,
+  //   // markers:true
+  // });
+
+
+  tl.to('.blck',{
+    scrollTrigger:{
+      trigger: '.blck',
+      start: 'center center',
+      end: 'bottom center',
+      scrub: true,
+      // markers: true,
+    },
+    opacity: 0,
+    scale: .5
+  })
+
+  tl.to('.blck>h1',{
+    scrollTrigger:{
+      trigger: '.blck',
+      start: 'center center',
+      end: 'bottom center',
+      scrub: true,
+      // markers: true,
+    },
+    opacity: 0,
+
+  })
+
+
+  tl.to('.breach',{
+    scrollTrigger:{
     trigger: ".breach",
     pin: true,
     scroller: `body`,
     start: `top top`,
     end: `250% top`,
     // markers:true
+    },
+  });
+
+  tl.to(['.two','#hero2>h1'],{
+    scrollTrigger:{
+    trigger: "body",
+    // pin: true,
+    scroller: `body`,
+    start: `597% top`,
+    scrub: 1,
+    end: `600% top`,
+    // markers:true,
+    },
+    opacity: 0,
+    ease: 'power4.in'
+  });
+
+  var clutter = "";
+document.querySelector(".textarea>h1")
+.textContent.split("")
+.forEach(function(dets){
+  clutter += `<span>${dets}</span>`
+  document.querySelector(".textarea>h1").innerHTML = clutter;
+})
+
+tl.add(() => {
+  const tl2 = gsap.timeline();
+
+
+  
+  tl2.to('.textarea>h1>span', {
+    color: '#fff',
+    stagger: .2,
+    scrollTrigger: {
+      trigger: "body",
+      scroller: "body",
+      start: "610% top",
+      end: "650% top",
+      scrub: true,
+      // markers: true
+    }
+  });
+});
+
+}
+
+
+const canvas3 = ()=>{
+  const canvas = document.querySelector(".phone>.three");
+  console.log(canvas)
+  const context = canvas.getContext("2d");
+  
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  
+  
+  window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    render();
   });
   
-  
-  
+  function files(index) {
+    var data = ` 
+    https://kzero.com/assets/home/benefit/seq/1.webp?9
+https://kzero.com/assets/home/benefit/seq/2.webp?9
+https://kzero.com/assets/home/benefit/seq/3.webp?9
+https://kzero.com/assets/home/benefit/seq/4.webp?9
+https://kzero.com/assets/home/benefit/seq/5.webp?9
+https://kzero.com/assets/home/benefit/seq/6.webp?9
+https://kzero.com/assets/home/benefit/seq/7.webp?9
+https://kzero.com/assets/home/benefit/seq/8.webp?9
+https://kzero.com/assets/home/benefit/seq/9.webp?9
+https://kzero.com/assets/home/benefit/seq/10.webp?9
+https://kzero.com/assets/home/benefit/seq/11.webp?9
+https://kzero.com/assets/home/benefit/seq/12.webp?9
+https://kzero.com/assets/home/benefit/seq/13.webp?9
+https://kzero.com/assets/home/benefit/seq/14.webp?9
+https://kzero.com/assets/home/benefit/seq/15.webp?9
+https://kzero.com/assets/home/benefit/seq/16.webp?9
+https://kzero.com/assets/home/benefit/seq/17.webp?9
+https://kzero.com/assets/home/benefit/seq/18.webp?9
+https://kzero.com/assets/home/benefit/seq/19.webp?9
+https://kzero.com/assets/home/benefit/seq/20.webp?9
+https://kzero.com/assets/home/benefit/seq/21.webp?9
+https://kzero.com/assets/home/benefit/seq/22.webp?9
+https://kzero.com/assets/home/benefit/seq/23.webp?9
+https://kzero.com/assets/home/benefit/seq/24.webp?9
+https://kzero.com/assets/home/benefit/seq/25.webp?9
+https://kzero.com/assets/home/benefit/seq/26.webp?9
+https://kzero.com/assets/home/benefit/seq/27.webp?9
+https://kzero.com/assets/home/benefit/seq/28.webp?9
+https://kzero.com/assets/home/benefit/seq/29.webp?9
+https://kzero.com/assets/home/benefit/seq/30.webp?9
+https://kzero.com/assets/home/benefit/seq/31.webp?9
+https://kzero.com/assets/home/benefit/seq/32.webp?9
+https://kzero.com/assets/home/benefit/seq/33.webp?9
+https://kzero.com/assets/home/benefit/seq/34.webp?9
+https://kzero.com/assets/home/benefit/seq/35.webp?9
+https://kzero.com/assets/home/benefit/seq/36.webp?9
+https://kzero.com/assets/home/benefit/seq/37.webp?9
+https://kzero.com/assets/home/benefit/seq/38.webp?9
+https://kzero.com/assets/home/benefit/seq/39.webp?9
+https://kzero.com/assets/home/benefit/seq/40.webp?9
+https://kzero.com/assets/home/benefit/seq/41.webp?9
+    `;
+    return data.split("\n")[index];
   }
+  
+  const frameCount = 41;
+  
+  const images = [];
+  const imageSeq = {
+    frame: 1,
+  };
+  
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = files(i);
+    images.push(img);
+  }
+  
+  gsap.to(imageSeq, {
+    frame: frameCount - 1,
+    snap: "frame",
+    ease: `power4.out`,
+    scrollTrigger: {
+      scrub: .5,
+      trigger: `.phone`,
+      start: `top top`,
+      end: `250% top`,
+      scroller: `body`,
+    },
+    onUpdate: render,
+  });
+  
+  images[1].onload = render;
+  
+  function render() {
+    scaleImage(images[imageSeq.frame], context);
+  }
+  
+  function scaleImage(img, ctx) {
+    var canvas = ctx.canvas;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+      img,
+      0,
+      0,
+      img.width,
+      img.height,
+      centerShift_x,
+      centerShift_y,
+      img.width * ratio,
+      img.height * ratio
+    );
+  }
+  ScrollTrigger.create({
+
+    trigger: ".phone",
+    pin: true,
+    scroller: `body`,
+    start: `top top`,
+    end: `250% top`,
+    // markers:true
+  });
+
+const animation = gsap.fromTo(
+  '.phone>.hero', 
+  { opacity: 0 },  
+  { opacity: 1 }  
+);
+
+ScrollTrigger.create({
+  trigger: '.phone',
+  scroller: 'body',
+  start: 'top top',
+  end: '10% top',
+  animation: animation,
+  scrub: true,
+  // markers: true
+})
+
+const animation2 = gsap.fromTo(
+  '.phone>.hero', 
+  { opacity: 1 },  
+  { opacity: 0 }  
+);
+
+ScrollTrigger.create({
+  trigger: '.phone',
+  scroller: 'body',
+  start: 'top top',
+  end: 'bottom top',
+  animation: animation2,
+  scrub: true,
+  // markers: true
+})
+
+tl.add(()=>{
+ const tl2 = gsap.timeline()
+
+ const three = document.querySelector('.phone>.three')
+
+
+
+tl2.to('.phone>.three',{
+  opacity: 0,
+  display: 'none',
+  scrollTrigger: {
+    trigger: '.phone>.hero',
+    scroller: 'body',
+    start: '30% -85%',
+    end: '31% top',
+    scrub: true,
+    // markers: true
+  }
+})
+
+tl2.to('.phone>.lft, .phone>.rgt',{
+  opacity: 1,
+  ease: 'power4.in',
+  scrollTrigger: {
+    trigger: '.phone>.hero',
+    scroller: 'body',
+    start: '30% -85%',
+    end: '31% -86%',
+    scrub: true,
+    // markers: true
+  }
+})
+
+tl2.to('.phone>.lft>img',{
+  transform: `translateX(-50%)`,
+  scrollTrigger: {
+    trigger: '.phone>.hero',
+    scroller: 'body',
+    start: '120% top',
+    end: '180% top',
+    scrub: true,
+    // markers: true
+  }
+})
+tl2.to('.phone>.rgt>img',{
+  transform: `translateX(50%)`,
+  scrollTrigger: {
+    trigger: '.phone>.hero',
+    scroller: 'body',
+    start: '120% top',
+    end: '180% top',
+    scrub: true,
+    // markers: true
+  }
+})
+
+tl2.to('.phone>.lft>.multi,.phone>.rgt>.multi',{
+ opacity: 0,
+  scrollTrigger: {
+    trigger: '.phone>.hero',
+    scroller: 'body',
+    start: '120% top',
+    end: '140% top',
+    scrub: true,
+    // markers: true
+  }
+})
+
+
+})
+
+
+
+
+}
+
 
 
 canvas();
 canvas2()
+canvas3()
