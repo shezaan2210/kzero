@@ -9,8 +9,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="w-full min-h-screen relative bg- overflow-hidden">
-      <nav class="flex w-[50%] translate-x-[50%] rounded-full h-[6vh] mt-[1vw] bg-white justify-center items-center gap-[3vw] fixed top-0 left-0 z-50">
+    <div class="loader w-full h-screen bg-black fixed flex items-end justify-end  z-50">
+      <div class="mid flex justify-between   fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[10%] h-[10%]">
+        <div class="left w-[50%] h-full flex justify-start">
+          <img class="w-full h-full" src="https://kzero.com/assets/home/benefit/7.svg" alt="">
+        </div>
+        <div class="icons w-full h-full ">
+
+          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 84 84"><path stroke="#fff" d="M17.44 1.3h-16v16M17.44 83.3h-16v-16M67.44 1.3h16v16M67.44 83.3h16v-16" opacity=".2"></path><path fill="#fff" d="M58.85 42.04c-.12 9.41-7.7 17.05-16.99 17.05-9.38 0-17-7.76-17-17.29s7.63-17.29 17-17.29c3.58 0 6.89 1.13 9.64 3.06a8.56 8.56 0 0 1 2.75-2.25A19.9 19.9 0 0 0 41.86 21C30.64 21 21.5 30.33 21.5 41.8s9.14 20.8 20.36 20.8c11.23 0 20.35-9.33 20.35-20.8 0-.3-.03-.6-.05-.92-.98.62-2.1 1-3.3 1.16Z"></path><path fill="#fff" d="M57.9 38.72a5.34 5.34 0 0 1-5.2-5.46 5.34 5.34 0 0 1 5.2-5.47c2.88 0 5.2 2.46 5.2 5.47a5.34 5.34 0 0 1-5.2 5.46Zm0-7.92a2.42 2.42 0 0 0-2.35 2.47 2.42 2.42 0 0 0 2.35 2.48c1.3 0 2.36-1.11 2.36-2.48a2.42 2.42 0 0 0-2.36-2.47ZM46.05 50.95l-5.3-7.63-1.98 2.15v5.48h-3.89V33.01h3.9v7.3l6.55-7.3h4.92l-6.97 7.62 7.28 10.32h-4.51Z"></path></svg>
+
+        </div>
+        <div class="right w-[50%] h-full flex justify-end">
+          <img class="w-full h-full" src="https://kzero.com/assets/home/benefit/8.svg" alt="">
+        </div>
+      </div>
+      <div class="translate-y-[90%] px-[3vw] h-full progress text-white text-8xl font-['font'] font-bold z-50">0%</div>
+    </div>
+    <main class="main  w-full min-h-screen relative bg- overflow-hidden">
+      <nav class=" hidden w-[50%] translate-x-[50%] rounded-full h-[6vh] mt-[1vw] bg-white justify-center items-center gap-[3vw] fixed top-0 left-0 z-40">
         <div class="logo h-fit w-[10%] ">
           <a href="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 45"> <path d="m74.14 21.16 7.53-7.75h-5.16l-7.22 7.66v-7.66H65v18.2h4.25V26l2-2 5.56 7.53v.06H82ZM90.14 27.86v-3.54h8.56v-3.75h-8.56v-3.41h9.75v-3.75h-14v18.2H100v-3.75ZM110 27.79V13.41h-4.24v18.2h13.32v-3.82ZM132.41 13.41l-4.68 12.42-4.65-12.35v-.07h-4.66l7.42 18.25v.07h3.68l7.4-18.16.05-.17ZM145.82 13.41h-4.25v18.2h4.25ZM163.95 13.41v10.84l-8.33-10.8h-3.86v18.2h4.19V20.43l8.6 11.13v.06h3.57V13.41ZM175.77 15.27v-1.84h14.34v1.37L178.2 29.72h11.92v1.85h-14.73V30.2l11.9-14.93ZM210.18 15.29H199v6.2h10v1.86h-10v6.35h11.3v1.86h-13.41V13.43h13.28ZM229.76 31.57l-5.34-7h-5.25v7h-2.07V13.43h7.9c4 0 6.65 2.16 6.65 5.43 0 3-2.1 4.8-5 5.31l5.65 7.42h-2.55Zm-4.92-16.24h-5.67v7.36h5.65c2.75 0 4.72-1.4 4.72-3.76s-1.73-3.6-4.7-3.6ZM246.58 31.88a9.17 9.17 0 0 1-9.35-9.36 9.27 9.27 0 0 1 9.4-9.41 9.17 9.17 0 0 1 9.37 9.36 9.25 9.25 0 0 1-9.42 9.41Zm0-16.87a7.18 7.18 0 0 0-7.2 7.47 7.25 7.25 0 0 0 7.25 7.52 7.18 7.18 0 0 0 7.2-7.47 7.26 7.26 0 0 0-7.25-7.53ZM40.41 22.76A18.57 18.57 0 0 1 22 41.2 18.56 18.56 0 0 1 3.63 22.5 18.58 18.58 0 0 1 22 3.8a18 18 0 0 1 10.45 3.31 9.26 9.26 0 0 1 3-2.44A21.54 21.54 0 0 0 22 0 22.3 22.3 0 0 0 0 22.5 22.3 22.3 0 0 0 22 45a22.28 22.28 0 0 0 22-22.5c0-.33 0-.65-.05-1a8.7 8.7 0 0 1-3.54 1.26Z"></path><path d="M39.38 19.17a5.78 5.78 0 0 1-5.63-5.91 5.63 5.63 0 1 1 11.25 0 5.78 5.78 0 0 1-5.62 5.91Zm0-8.57a2.68 2.68 0 1 0 2.55 2.67 2.62 2.62 0 0 0-2.55-2.67ZM26.56 32.4l-5.73-8.26-2.15 2.33v5.93h-4.2V13h4.21v7.9l7.1-7.9h5.31l-7.53 8.24 7.87 11.16Z"></path> </svg>
@@ -28,7 +44,7 @@
         </div>
       </nav>
 
-      <!-- <section class="home w-full h-screen relative z-[2] overflow-hidden">
+      <section id="home" class="home w-full h-screen relative z-[2] overflow-hidden">
         <div class="overlay w-full h-screen bg-black fixed opacity-0 z-10"></div>
         <div class="bg w-full h-full fixed z-[-1]">
           <img class="w-full h-full object-cover sticky z-20" src="https://kzero.com/assets/home/hero/bg.webp" alt="">
@@ -55,22 +71,16 @@
             <img class="h-[20%] w-[8%]" src="https://kzero.com/wp-content/uploads/2024/04/kzero-homepage-5-2x.png" alt="">
           </div>
         </section> 
-
-      
-       
         <canvas class="homepage fixed z-[-1] w-full h-screen"></canvas>
-
-       
-      
-      </section> -->
+      </section>
      
 
-      <!-- <section class="breach w-full h-screen bg-black relative z-20 overflow-hidden">
+      <section id="breach" class="breach w-full h-screen bg-black relative z-20 overflow-hidden">
         <section class="blck w-full h-[100vh]  fixed  z-20 bg-black text-white flex items-center justify-center">
           <h1 class="one text-7xl text-center">Say Goodbye to Pa$$w0rds</h1>
         </section>
         <div id="hero2" class="hero w-full h-full fixed text-white flex flex-col gap-[2vw] items-center justify-center text-center  bg-transparent z-[16] -mt-[4vw]">
-          <h1 class="percentage text-8xl">1%</h1>
+          <h1 id="countdown" class="percentage text-8xl">1%</h1>
           <h1 class="text-3xl font-light text-zinc-500">of breaches are caused by <br> stolen credentials</h1>
         </div>
         <canvas class="two fixed z-[15] w-full h-screen"></canvas>
@@ -79,9 +89,9 @@
             customers with phishing- <br>
             resistant MFA</h1>
         </section>
-      </section> -->
+      </section>
 
-      <!-- <section class="phone w-full h-screen relative bg-[#171717] overflow-hidden">
+      <section id="phone" class="phone w-full h-screen relative bg-[#171717] overflow-hidden">
         <div class="overlay bg-[url(https://kzero.com/assets/bg.jpg)] opacity-[.1] bg-repeat w-full h-full fixed top-0 left-0 z-[0]"></div>
         <div class="hero w-full h-screen relative z-[10] gap-[1vw] opacity-100 flex flex-col justify-center items-center text-white">
           <h1 class="text-8xl capitalize">introducing <span class="text-[#324EEF]">multi-pass</span></h1>
@@ -102,44 +112,49 @@
           </div>
         </div>
         <canvas class="three absolute w-full h-screen top-0 left-0"></canvas>
-      </section> -->
+      </section>
 
-      <section class="cards w-full h-screen relative">
+      <section id="cards" class="cards w-full h-[200vh] relative z-10">
         <div class="bg w-full h-full bg-[#D7D8E2] absolute z-[-1]">
-          <svg class="w-full h-full" width="2311" height="2623" viewBox="0 0 2311 2623" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1206.54 1070.04L2307.17 2620.64H1659.74L837.501 1471.45L552.632 1782.21V2620.64H2.31641L2.31641 1.78223L552.632 1.78223L552.632 1089.46L1549.67 1.78223L2190.63 1.78223L1206.54 1070.04Z" stroke="white" stroke-width="3"></path> </svg>
+          <svg class="w-full h-full" width="2311" height="2623" viewBox="0 0 2311 2623" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1206.54 1070.04L2307.17 2620.64H1659.74L837.501 1471.45L552.632 1782.21V2620.64H2.31641L2.31641 1.78223L552.632 1.78223L552.632 1089.46L1549.67 1.78223L2190.63 1.78223L1206.54 1070.04Z" stroke="white" stroke-width="3"></path>
+          </svg>
         </div>
+      
         <div class="heading w-full h-[20vh] translate-y-[150%]">
           <h1 class="text-7xl text-center capitalize mb-2">experience</h1>
-          <h1 class="text-7xl text-center capitalize ">true security</h1>
+          <h1 class="text-7xl text-center capitalize">true security</h1>
         </div>
-
-        <div class="carditems w-full h-[80vh]  translate-y-[50vh   flex  gap-[3vw]">
-          <div class="item  w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
-            <h6 class="text-xl">{ 01 }</h6>
-            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-1-2x-1.png" alt="">
-            <h1 class="text-4xl w-1/2">Deliver a secure and frictionless login experience</h1>
+      
+        <div class="card w-[180vw] h-screen whitespace-normal relative">
+          <div class="carditems w-[180vw] h-screen bg-red- absolute gap-[5vw] bg-red- rounded-full justify-center z-10 translate-y-[50vh flex">
+            <div class="item mt-[25rem] w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+              <h6 class="text-xl">{ 01 }</h6>
+              <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-1-2x-1.png" alt="">
+              <h1 class="text-4xl w-full inline">Deliver a secure and frictionless login experience</h1>
+            </div>
+      
+            <div class="item rotate-[15deg] none mt-[30rem] w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+              <h6 class="text-xl">{ 02 }</h6>
+              <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-2-2x-1.png" alt="">
+              <h1 class="text-4xl w-full">Meet and exceed stringent regulatory requirements</h1>
+            </div>
+      
+            <div class="item none mt-[42rem] rotate-[25deg] -ml-[2vw] w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+              <h6 class="text-xl">{ 03 }</h6>
+              <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-3-2x-1.png" alt="">
+              <h1 class="text-4xl w-full">Reduce costs and free up IT resources</h1>
+            </div>
+      
+            <div class="item none mt-[60rem] rotate-[35deg] -ml-[5vw] w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
+              <h6 class="text-xl">{ 04 }</h6>
+              <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-4-2x-1.png" alt="">
+              <h1 class="text-4xl w-full">Future proof against new credential-based threats</h1>
+            </div>
           </div>
-
-          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
-            <h6 class="text-xl">{ 02 }</h6>
-            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-2-2x-1.png" alt="">
-            <h1 class="text-4xl w-1/2">Meet and exceed stringent regulatory requirements</h1>
-          </div>
-
-          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
-            <h6 class="text-xl">{ 03 }</h6>
-            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-3-2x-1.png" alt="">
-            <h1 class="text-4xl w-1/2">Reduce costs and free up IT resources</h1>
-          </div>
-
-          <div class="item  none   w-[30vw] h-[55vh] relative rounded-[4rem] bg-white flex flex-col justify-between py-[3vw] px-[4vw]">
-            <h6 class="text-xl">{ 04 }</h6>
-            <img class="w-[75%] h-[75%] absolute -top-[20%] -right-[1%]" src="https://kzero.com/wp-content/uploads/2024/02/kzero-4-2x-1.png" alt="">
-            <h1 class="text-4xl w-1/2">Future proof against new credential-based threats</h1>
-          </div>
-
         </div>
       </section>
+      
     </main>
 
 
